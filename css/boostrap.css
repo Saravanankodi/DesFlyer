@@ -1,0 +1,1004 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Iceberg&family=Inter:wght@100..900&display=swap');
+
+html
+{
+    scroll-behavior: smooth;
+    scroll-padding-top: var( --scroll-padding, 100px) ;
+}
+nav
+{
+    background-color: rgba(224, 224, 224);
+    /* background: transparent;
+    backdrop-filter: blur(5px); */
+
+}
+.navbar-nav
+{
+    font-size: 20px;
+    font-family:"Inter", sans-serif ;
+}
+.navbar-nav a:hover
+{
+    padding: 10px;
+    background: rgb(4, 150, 255);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    border-radius: 20px 10px;
+}
+/* .logo
+{
+    height: 15%;
+    width: 15%;
+
+} */
+/* .popup-overlay
+{
+    background: rgba(0,0,0, 0.5);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 700ms ease;
+}
+.popup-overlay.active
+{
+    opacity: 1;
+} */
+.popup-container
+{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, calc(-50% + 50px));
+    background-color: rgba(255, 255, 255,0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    font-family:  Iceberg, "Source Sans Pro";
+    padding: 20px auto;
+    box-shadow: 0px 10px 20px rgba(0, 0,0, 0.5);
+    height: 70%;
+    width: 40%;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 700ms ease;
+    border-radius: 5% 0;
+}
+.popup-overlay.active .popup-container
+{
+    transform: translate(-50%,-50%);
+    opacity: 1;
+    pointer-events: auto;
+}
+.popup-container .skip-btn
+{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    background:#0496ff;
+    color: #ffff;
+    font-size: 20px;
+    padding: 4px 8px;
+    border-radius: 10px 5px;
+    cursor: pointer;
+}
+.popup-container .popup-heading
+{
+    font-size: 2.8vw;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: black;
+}
+.popup-container .vector-img
+{
+    height: auto;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-60%);
+    
+}
+.link-btn
+{
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translate(-50%,-2%);
+    background:#0496ff;
+    color: #ffff;
+    font-size: 32px;
+    padding: 4px 8px;
+    border-radius: 20px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+
+/* ----------------- For Laptop viwe -------------------- */
+.container-lg h2
+{
+    font-size: 4.2vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    
+}
+.container-lg .text
+{
+    font-weight: 600;
+}
+.container-lg .head1
+{
+    font-size: 4.167vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    width: 100%;
+    line-height: 8vh;
+}
+.container-lg span
+{
+    color: rgb(4, 150, 255);
+}
+.container-lg .img-thumbnail
+{
+    width: 80%;
+    height: auto;
+    border: none;
+    margin-left: 100px;
+}
+.container-lg .btn
+{
+    font-size: 2.778vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: hsl(205, 100%, 51%);
+    border-radius: 10px;
+    display: flex;
+    width: 11vw;
+    height: 3.5vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    outline: none;
+}
+.container-lg .btn img
+{
+    width: 30%;
+    margin: 5px;
+
+}
+
+.container-lg .star-group
+{
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-right: 1px solid black;
+}
+.container-lg .star-group img
+{
+    height: auto;
+    width: 20%;
+    padding: 2%;
+}
+.container-lg .text1
+{
+    font-size: 1.5vw;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-weight: 600;
+    padding: 2.5%;
+}
+.container-lg .text2
+{
+    font-size: 1.5vw;
+    border-left: 1px solid black;
+    font-weight: 600;
+    padding: 2.5%;
+}
+.container-lg .image1
+{
+    width: 100%;
+    height: 90%;
+    border-radius: 2%;
+    
+}
+.para1
+{
+    color: rgb(4, 150, 255);
+    font-size: 1.4vw;
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    margin-top: 2.7vh; 
+    line-height: 5vh;
+    font-weight: 600;
+}
+.para2
+{
+    font-size: 1.4vw;
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    line-height: 5vh;
+    font-weight: 600;
+}
+.heading
+{
+    color: rgb(4, 150, 255);
+    font-size: 3.33vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    text-align: center;
+}
+.aboutus
+{
+    text-align: center;
+    color: rgb(4, 150, 255);
+}
+.container-lg .group-3
+{
+    height: auto;
+    width: 80%;
+}
+.container-lg .group-4
+{
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+.contact .box
+{
+    display: flex;
+    border: 2px solid #0496FF;
+    border-radius: 15px;
+    width: 25% ;
+    height: 70px;
+    margin: 2% 4%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    
+}
+.contact .box img
+{
+    height: 80%;
+    width: auto;
+    margin: 3%;
+}
+.contact .box p
+{
+    font-size: 2.22vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    font-weight: 400;
+    display: flex;
+    margin: 8%;
+    text-align: center;
+    line-height: 25px;
+}
+.contact .no-box 
+{
+    display: flex;
+    height: 70px;
+    width: auto;
+    margin-top: 2%;
+
+}
+.contact .no-box img
+{
+    height: 75%;
+    width: auto;
+    /* margin-top: 20px; */
+    margin-right: 20px;
+}
+.contact .no-box p
+{
+    font-size: 2.778vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    font-weight: 400;
+    /* display: inline; */
+    text-align: left;
+    line-height: 40px;
+}
+
+.slide_head
+{
+    font-family:Iceberg, "Source Sans Pro";
+    color: #0496FF;
+    font-size: 3vw;
+}
+.slide_text
+{
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    color: black;
+
+}
+/* ----------------- End of Laptop viwe ----------------- */
+
+
+
+.footer
+{
+    background-color: rgba(224, 224, 224, 0.5);
+    background-image: url(images/ui-1.png);
+    background-repeat: no-repeat;
+    background-position-x:0;
+    background-position-y: center; 
+}
+.footer h3
+{
+    font-size: 2.222vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    margin-top: 2.5vh;
+}
+.footer p
+{
+    font-size: 1.389vw;
+    font-family: "Inter", sans-serif;
+    line-height: 5vh;
+    font-weight: 500;
+}
+.footer #colom-1 a
+{
+    font-size: 1.5vw;
+    font-family: Inter, sans-serif;
+    line-height: 5vh;
+    text-decoration: none;
+    margin-top: 0px;
+}
+.footer #colom-2
+{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    line-height: 2.778vh;
+    list-style: none;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.footer #colom-2 li a
+{
+    font-size: 2.5vw;
+    font-family: Iceberg, "Source Sans Pro";
+    font-weight: 500;
+    text-decoration: none;
+    color: black;   
+    text-align: justify;
+    line-height: 8vh ;
+
+}
+.footer #colom-3 .footer_head
+{
+    margin-left: 10%;
+    width: 120%;
+}
+.footer_img
+{
+    margin-left: 7%;
+    width: 120%;
+}
+.footer #colom-3 img
+{
+    width: 100%;
+    
+}
+.footer a
+{
+    color: black;
+}
+.container-md h2
+{
+    font-family: Iceberg, "Source Sans Pro";
+    font-weight: 400;
+}
+.container-md span
+{
+    color: #0496FF;
+}
+.container-md p
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.container-md .head
+{
+    font-size: 5.99vw;
+    /* margin-top:15% ; */
+}
+.container-md .group-1
+{
+    width: 80%;
+    height: auto;
+    margin: 5%;
+    margin-top: 0;
+}
+.container-md .btn
+{
+    font-size: 5.2vw;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(4, 150, 255);
+    border-radius: 10px;
+    display: flex;
+    width: 20.833vw;
+    height: 8vh;
+    font-family:  Iceberg, "Source Sans Pro";
+    margin-top: 5%;
+    border: none;
+}
+.container-md .btn img
+{
+    width: 30%;
+    margin: 5px;
+
+}
+.container-md .star-group
+{
+    display: flex;
+    height: auto;
+    width: 110%;
+    border-right: 1px solid black;
+    padding: 4%;
+    padding-bottom: 20px;
+}
+.container-md .star-group img
+{
+    height: auto;
+    width: 20%;
+    padding: 2%;
+}
+.container-md .text1
+{
+    font-size: 2.344vw;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    font-weight: 600;
+    padding: 10px;
+    width: 120%;
+}
+.container-md .text2
+{
+    font-size: 2.344vw;
+    border-left: 1px solid black;
+    font-weight: 600;
+    padding: 10px;
+    width: 90%;
+    margin-left: 20px;
+    
+}
+.container-md .head1
+{
+    text-align: center;
+    font-size: 6.25vw;
+}
+.container-md .image1
+{
+    width: 80%;
+    height: 40%;
+    border-radius: 2%;
+    margin-left:10% ;
+    margin-top: 2%;
+}
+.container-md .para1
+{
+    color: rgb(4, 150, 255);
+    font-size: 2.344vw;
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    margin-top: 40px; 
+    line-height: 30px;
+    font-weight: 600;
+}
+.container-md .para2
+{
+    font-size: 2.344vw;
+    text-align: justify;
+    font-family: "Inter", sans-serif;
+    line-height: 30px;
+    font-weight: 600;
+}
+.container-md .heading
+{
+    color: rgb(4, 150, 255);
+    font-size: 6.25vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    text-align: center;
+    width: 100%;
+}
+.aboutus
+{
+    text-align: center;
+    color: rgb(4, 150, 255);
+}
+.container-md .group-2
+{
+    margin-left: 12px;
+}
+.container-md .group-3
+{
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+}
+.container-md .group-4
+{
+    width: 60%;
+    height: auto;
+    top: 0;
+    margin-left: 20%;
+}
+.contact_tap .box
+{
+    display: flex;
+    border: 2px solid #0496FF;
+    border-radius: 15px;
+    width: 30% ;
+    height: 60px;
+    margin: 2%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+    
+}
+.contact_tap .box img
+{
+    height: 60%;
+    width: auto;
+    margin: 3%;
+}
+.contact_tap .box p
+{
+    font-size: 3.125vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    font-weight: 400;
+    display: flex;
+    margin: 6%;
+    text-align: center;
+    line-height: 25px;
+}
+.contact_tap .no-box 
+{
+    display: flex;
+    height: 60px;
+    width: auto;
+    margin-top: 2%;
+    padding: 0;
+
+}
+.contact_tap .no-box img
+{
+    height: 50%;
+    width: auto;
+    /* margin-top: 20px; */
+    margin-right: 5px;
+}
+.contact_tap .no-box p
+{
+    font-size: 3.125vw;
+    font-family:  Iceberg, "Source Sans Pro";
+    font-weight: 400;
+    /* display: inline; */
+    text-align: left;
+    line-height: 30px;
+}
+/* .navbar-nav
+{
+    margin-top: 20px;
+    height: 50px;
+    text-transform: uppercase;
+    display: inline;
+
+} */
+.contact_end_tab span
+{
+    color: #0496FF;
+}
+#navbar {
+    background-color: rgba(224, 224, 224, 0.5);
+    position: fixed;
+    top: 0;
+  }
+  
+  #navbar a {
+    float: left;
+    display:  block;
+    color: #0496FF;
+    text-align: center;
+    /* padding: 15px; */
+    text-decoration: none;
+    font-size: 17px;
+  }
+  #navbar a:hover {  
+    background-color: #0496FF;  
+    color: #0496FF;
+  }
+  
+.mobile
+{
+    height: auto;
+    width: 100%;
+    align-items: center;
+
+}
+.mobile h2
+{
+    font-family: Iceberg, "Source Sans Pro";
+    font-weight: 400;
+    text-align: center;
+    color: #0496FF;
+}
+.mobile span
+{
+    color: #0496FF;
+}
+.mobile p
+{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    text-align: justify;
+
+}
+
+.mobile .head
+{
+    font-size: 2rem;
+    text-align: center;
+}
+.mobile .head2
+{
+    font-size: 3rem;
+    text-align: center;
+
+}
+.mobile .png1
+{
+    width: 80%;
+    height: auto;
+    margin: 5%;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+
+.mobile .btn
+{
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #0496ff;
+    border-radius: 10px;
+    display: flex;
+    width: 160px;
+    height: 50px;
+    font-family:  Iceberg, "Source Sans Pro";
+    margin-top: 5%;
+    margin: auto 29%;
+}
+.mobile .btn img
+{
+    width: 30%;
+    margin: 5px;
+
+}
+.mobile .star-group
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+    margin: 5% auto;
+
+}
+.mobile .star-group img
+{
+    height: auto;
+    width: 15%;
+    margin: 2%;
+}
+.mobile .text
+{
+    height: auto;
+    width: 100%;
+    align-items: center;
+}
+.mobile .text .text1
+{
+    border-right: 1px solid black;
+    padding-right: 5%;
+    padding-top: .5vh;
+    padding-bottom: .5vh;
+}
+.mobile .text .text2
+{
+    border-left: 1px solid black;
+    padding-left: 10%;
+    word-spacing: 5px;
+}
+.mobile .image-1
+{
+    height: auto;
+    width: 90%;
+    border-radius: 15px;
+    margin: 5% auto;
+}
+.mobile .image
+{
+    height: auto;
+    width: 80%;
+    margin: 2% auto;
+}
+
+
+.footer_mobile
+{
+    background-color: rgba(224, 224, 224, 0.5);
+}
+
+#name{
+    font-family: Iceberg;
+    font-size: 38px;
+    color:black;
+  }
+  #fo{
+    font-family: Iceberg;
+    font-size: 40px;
+    color:#0496FF;
+    
+  }
+  .mobile_nobox
+  {
+    margin: 5%;
+    line-height: 1vh;
+    padding-right: 0;
+  }
+  #num{
+    margin-top: 10%;
+   font-size: 30px; 
+   background-color: white;
+   color: #0496FF;
+   border-radius: 10px;
+   margin: 5px 5px;
+   padding: 1px 8px;
+   border: 2px solid #0496FF;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+   width: 80%;
+   height: 80px;
+   font-family: Iceberg;
+  }
+#name{
+font-size: 30px;
+font-family: Iceberg;
+color: black;
+margin-top: 20px;
+padding: 0%;
+}
+#num .img
+{
+    float: inline-start;
+    margin-right: 10%;
+}
+
+  #body{
+    font-family: Inter;
+    font-size: 20px;
+    padding: 0;
+  }
+  #body a{
+    text-decoration: none;
+    color: black;
+  }
+  #name1{
+    font-family: Iceberg;
+    font-size: 60px;
+    color:black;
+  }
+  .footer{
+    margin-top: 0px;
+    background-color: grey;
+    padding-bottom: 20px;
+    width: 100%;
+    
+  }
+  #design{
+    background-color:black; 
+    font-family:Iceberg; 
+    color:white; 
+    text-align: center;
+    margin-top: 20px;
+        
+  }
+
+
+
+
+
+@media (max-width:767px)
+{
+    .nav-bar{
+        display: none;
+    }
+    .container-lg{
+        display: none;
+    }
+    .container-md{
+        display: none;
+    }
+    .footer
+    {
+        display: none;
+    }
+    .nav_bar_tab
+    {
+        display: none;
+    }
+    .contact_end_tab
+    {
+        display: none;
+    }
+    .popup-container
+    {
+        height: 50%;
+        width: 70%;
+    }
+    .popup-container .vector-img
+    {
+        height: 50%;
+        width: auto;
+    }
+    .popup-container .popup-heading
+    {
+        font-size: 5vw;
+        top: 20%;
+        left: 10%;
+        /* transform: translate(-60%,-20%); */
+    }
+    .last
+    {
+        display: none;
+    }
+    html
+{
+    scroll-behavior: smooth;
+    scroll-padding-top: var( --scroll-padding, 225px) ;
+}
+.footer_mobile
+{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    
+}
+.last
+{
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+.link-btn
+{
+    font-size: 24px;
+}
+.popup-container .skip-btn
+{
+    padding: 4px 12px;
+}
+}
+@media (min-width:768px) and (max-width:1023px)
+{
+    .popup-container .skip-btn
+    {
+        right: 2%;
+    }
+    .container-lg{
+        display: none;
+    }
+    .mobile
+    {
+        display: none;
+    }
+    .footer #colom-3
+    {
+        margin-left: 15px;
+    }
+    .footer #colom-3 img
+    {
+        width: 30px;
+        display: flex;
+        padding: 0;
+    }
+    .footer h3
+    {
+        font-size: 1.5rem;
+    }
+    .footer p
+    {
+        font-size: 1rem;
+    }
+    .footer
+    {
+        background-color: rgba(224, 224, 224, 0.5);
+        background-image: none;
+    }
+    .footer_mobile
+    {
+        display: none;
+    }
+    .footer #colom-2 li a
+    {
+        line-height: 5vh;
+        font-size: 3vw;
+    }
+    .popup-container
+    {
+        height: 60%;
+        width: 70%;
+    }
+    .popup-container .vector-img
+    {
+        height: auto;
+        width: 50%;
+        bottom: 10%;
+    }
+    .popup-container .popup-heading
+    {
+        left: 15%;
+        font-size: 4.5vw;
+    }
+    .footer #colom-3 .footer_icon
+    {
+        margin: 0;
+        padding: 0;
+    } 
+    .footer p
+{
+    font-size: 2vw;
+    font-family: "Inter", sans-serif;
+    line-height: 3vh;
+    font-weight: 500;
+}
+.footer #colom-1 a
+{
+    font-size: 2vw;
+    font-family: "Inter", sans-serif;
+    line-height: 5vh;
+    text-decoration: none;
+}
+.footer h3
+{
+    margin: 0;
+}
+}
+
+@media (min-width:1024px)
+{
+    .container-md{
+        display: none;
+    }
+    .mobile
+    {
+        display: none;
+    }
+    .footer_mobile
+    {
+        display: none;
+    }
+    .nav_bar_tab
+    {
+        display: none;
+    }
+    .contact_tap
+    {
+        display: none;
+    }
+    /* .footer #coloum-3
+    {
+        margin: 10px;
+        padding: 12px;
+        
+
+    } */
+
+}
