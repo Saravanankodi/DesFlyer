@@ -89,9 +89,8 @@ nav
 .popup-container .popup-heading
 {
     font-size: 2.8vw;
+    text-aline:center;
     position: absolute;
-    top: 10%;
-    left: 20%;
     color: black;
 }
 .popup-container .vector-img
