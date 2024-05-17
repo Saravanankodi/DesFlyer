@@ -851,8 +851,7 @@ padding: 0%;
     .popup-container .popup-heading
     {
         font-size: 5vw;
-        top: 20%;
-        left: 10%;
+        text-aline:center;
         /* transform: translate(-60%,-20%); */
     }
     .last
