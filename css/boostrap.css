@@ -851,9 +851,9 @@ padding: 0%;
     }
     .popup-container .popup-heading
     {
-        font-size: 6.5vw;
+        font-size: 7vw;
         top:18%;
-        left:10%;
+        left:8%;
         /* transform: translate(-60%,-20%); */
     }
     .last
